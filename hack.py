@@ -82,7 +82,7 @@ class IP(Structure):
 class Sniff():#Black Hat Python PDF
     
     def run(self):
-        host = "192.168.0.30"
+        host = socket.gethostbyname(socket.gethostname())
         if os.name == "nt":
             socket_protocol = socket.IPPROTO_IP
         else:
